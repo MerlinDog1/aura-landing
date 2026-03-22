@@ -79,3 +79,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* GitHub Pages static export safeguard: force animated elements visible */
+[style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
